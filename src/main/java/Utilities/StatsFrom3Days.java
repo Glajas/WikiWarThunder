@@ -13,7 +13,7 @@ public class StatsFrom3Days {
     private String cls;
     private Date date;
     private double rb_lower_br;
-    private double rb_upper_br;
+    private double rb_uptier_br;
     private double rb_battles_sum;
     private double rb_battles_mean;
     private double rb_win_rate;
@@ -35,7 +35,7 @@ public class StatsFrom3Days {
 
         String[] brRange = values[3].split(" ~ ");
         this.rb_lower_br = Double.parseDouble(brRange[0]);
-        this.rb_upper_br = Double.parseDouble(brRange[1]);
+        this.rb_uptier_br = Double.parseDouble(brRange[1]);
         this.rb_battles_sum = Double.parseDouble(values[4]);
         this.rb_battles_mean = Double.parseDouble(values[5]);
         this.rb_win_rate = Double.parseDouble(values[6]);
@@ -74,8 +74,8 @@ public class StatsFrom3Days {
         return rb_battles_sum;
     }
 
-    public double getRb_upper_br() {
-        return rb_upper_br;
+    public double getRb_uptier_br() {
+        return rb_uptier_br;
     }
 
     public double getRb_lower_br() {
