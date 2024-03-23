@@ -4,7 +4,7 @@ import Engine.WikiEngine;
 
 import javax.swing.*;
 
-public class WikiFrame extends JFrame implements InterfaceGUI {
+public class WikiFrame extends JFrame {
     private WikiEngine wikiEngine;
 
     public WikiFrame() {
@@ -13,10 +13,5 @@ public class WikiFrame extends JFrame implements InterfaceGUI {
 
     public void setWikiEngine(WikiEngine wikiEngine) {
         this.wikiEngine = wikiEngine;
-    }
-
-    @Override
-    public void updateStats(String line) {
-
     }
 }
